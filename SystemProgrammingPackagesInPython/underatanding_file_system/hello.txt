@@ -1,0 +1,3 @@
+this is the writing mode 
+hello
+i wrote thin append mode

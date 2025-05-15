@@ -1,0 +1,6 @@
+Mode	Meaning
+r+	Read and write (must exist; no overwrite)
+w+	Write and read (creates or overwrites)
+a+	Append and read (creates if not exists)
+rb, wb, ab	Binary versions (for images, files)
+r+b, w+b, etc.	Read + write in binary mode
