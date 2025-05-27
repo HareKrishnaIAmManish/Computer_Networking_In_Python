@@ -1,0 +1,18 @@
+from ftplib import FTP
+ftp_client=FTP('ftp.be.debian.org')
+print("-----------------------------")
+print("Server: ",ftp_client.getwelcome())
+print("-----------------------------")
+print(ftp_client.login())
+print("-----------------------------")
+print("Files And Directories in the root Directory")
+print("-----------------------------")
+ftp_client.dir()
+print("-----------------------------")
+ftp_client.cwd('/debian/tools')
+files=ftp_client.nlst()
+files.sort()
+print("%d files in /pub/linux/kernel directory:"%len(files))
+for file in files:
+    print(file)
+ftp_client.quit()
