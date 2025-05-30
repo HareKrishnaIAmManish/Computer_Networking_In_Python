@@ -18,9 +18,14 @@ def run_ssh_command(hostname,user,passwd,command):
         response=channel.recv(1024)
         print('Command %r(%r)---->%s'%(command,user,response)) 
 if __name__=="__main__":
+    #hostname = input("Enter the target hostname: ")
     hostname=""
+    #port = input("Enter the target port: ")
     port=22
+    #username = input("Enter username: ")
     username=""
+    #password = getpass.getpass(prompt="Enter password: ")
     password=""
+    #command = input("Enter command: ")
     command="ls"
     run_ssh_command(hostname,username,password,command)
