@@ -1,0 +1,5 @@
+Host,Protocol,Port,State
+49.50.109.66,ftp,21,filtered
+49.50.109.66,ssh,22,filtered
+49.50.109.66,opc-job-start,423,filtered
+49.50.109.66,http-proxy,8080,filtered
