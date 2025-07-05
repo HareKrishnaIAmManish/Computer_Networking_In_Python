@@ -7,9 +7,9 @@ print(portScanner.command_line())
 hosts_list=[(x,portScanner[x]['status']['state']) for x in portScanner.all_hosts()]
 for host,status in hosts_list:
     print(host,status)
-for protocol in portScanner[host].all_protocols():
-    print('Protocol : %s '% protocol)
-    listport=portScanner[host]['tcp'].keys()
-    for port in listport:
+    for protocol in portScanner[host].all_protocols():
+      print('Protocol : %s '% protocol)
+      listport=portScanner[host]['tcp'].keys()
+      for port in listport:
         print('Port: %s State : %s' % (port,portScanner[host][protocol][port]['state']))
         
